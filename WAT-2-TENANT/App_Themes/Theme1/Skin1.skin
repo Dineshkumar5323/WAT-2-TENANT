@@ -1,0 +1,6 @@
+﻿<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+<asp:TextBox runat="server" SkinID="txt" BackColor="Skyblue" ForeColor="Black"></asp:TextBox>
+
+

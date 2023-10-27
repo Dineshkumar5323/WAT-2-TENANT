@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="W-2-T.Master.cs" Inherits="WAT_2_TENANT.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WAT-2-TENENT</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+<form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid" >
+            <a href="#" class="navbar-brand " style="color:aqua">WAY-2-TENANT🏠</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <div class="navbar-nav">
+                    <a href="Dashboard.aspx" class="nav-item nav-link active" style="color:azure">Dashboard</a>
+                    <a href="House.aspx" class="nav-item nav-link" style="color:azure">House</a>
+                    <a href="Apartment.aspx" class="nav-item nav-link" style="color:azure">Apartment</a>
+                    <a href="Shop.aspx" class="nav-item nav-link" style="color:azure">Shop</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color:azure">PG Hostel</a>
+                    <div class="dropdown-menu">
+                        <a href="Men's_PG.aspx" class="dropdown-item nav-item nav-link" style="color:darkred">Men's PG</a>  
+                        <a href="Women's_PG.aspx" class=" -item nav-item nav-link" style="color:darkred">Women's PG</a>
+                    </div>
+                </div>
+                <div>
+                <a href="About.aspx" class="nav-item nav-link" style="color:azure">About Us</a>
+                    </div>
+                <div class="navbar-nav ml-xl-auto">
+                    <a href="Login.aspx" class="nav-item nav-link" style="color:azure">Login</a>
+                    <a href="Register.aspx" class="nav-item nav-link" style="color:azure">Register</a>
+                </div>
+                    
+            </div>
+         </div>
+    </nav>
+            </div>
+        <div>
+            <asp:ContentPlaceHolder ID="Dashboard" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>
